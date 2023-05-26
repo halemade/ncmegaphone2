@@ -1,6 +1,5 @@
 from dash import Dash, dcc, html, Input, Output, State
 import dash_design_kit as ddk
-import plotly.express as px
 import dash_mantine_components as dmc
 
 app = Dash(__name__)

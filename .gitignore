@@ -7,6 +7,7 @@
 # Ignore data that is generated during the runtime of an application
 # This folder is used by the "Large Data" sample applications
 runtime_data/
+megaphone_client_secret.json
 
 # Omit SQLite databases that may be produced by dash-snapshots in development
 *.db
