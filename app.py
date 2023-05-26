@@ -1,9 +1,13 @@
 from dash import Dash, dcc, html, Input, Output, State
 import dash_design_kit as ddk
 import dash_mantine_components as dmc
+import flask
+from flask_talisman import Talisman
+
 
 app = Dash(__name__)
 server = app.server  # expose server variable for Procfile
+Talisman(server, content_security_policy=None)
 
 house = "https://www.ncleg.gov/Members/ContactInfo/H"
 senate = "https://www.ncleg.gov/Members/ContactInfo/S"
