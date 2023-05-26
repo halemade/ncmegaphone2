@@ -23,9 +23,11 @@ sidebar = [
     ),
 ]
 
-
+app.Title = "NC Megaphone 2"
 app.layout = ddk.App(
     children=[
+        html.Div(id="dummy"),
+        html.Div(id="app-title", children="NC Megaphone 2", hidden=True),
         ddk.Header(
             [
                 ddk.Logo(src=app.get_asset_url("ncmegaphone-logo.png")),
@@ -79,6 +81,17 @@ A concerned and active voter,
         ),
     ],
     show_editor=True,
+)
+
+app.clientside_callback(
+    """
+    function() {
+        document.title = "NC Megaphone 2";
+        return null; // dummy output
+    }
+    """,
+    Output("dummy", "children"),
+    [Input("app-title", "children")],
 )
 
 
