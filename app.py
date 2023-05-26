@@ -23,7 +23,6 @@ sidebar = [
     ),
 ]
 
-df = px.data.stocks()
 
 app.layout = ddk.App(
     children=[
