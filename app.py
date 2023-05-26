@@ -90,9 +90,9 @@ A concerned and active voter,
 )
 def send_email(nclicks, selectedBodies):
     if len(selectedBodies) == 1:
-        return f"Emails sent to the {selectedBodies[0]}!"
+        return f"Emails sent to the {selectedBodies[0]}! (not really, the google integration is in active development)"
     else:
-        return f"Emails sent to the {selectedBodies[0]} and the {selectedBodies[1]}!"
+        return f"Emails sent to the {selectedBodies[0]} and the {selectedBodies[1]}! (not really, the google integration is in active development)"
 
 
 if __name__ == "__main__":
