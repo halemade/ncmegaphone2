@@ -13,7 +13,7 @@ house = "https://www.ncleg.gov/Members/ContactInfo/H"
 senate = "https://www.ncleg.gov/Members/ContactInfo/S"
 
 sidebar = [
-    ddk.CardHeader("Choose groups to email"),
+    ddk.CardHeader("Choose groups to email!"),
     dcc.Checklist(
         id="bodies-of-legislature",
         value=["NC House", "NC Senate"],
